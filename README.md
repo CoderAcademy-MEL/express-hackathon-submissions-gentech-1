@@ -2,7 +2,7 @@
 
 Hey all!
 
-Excellent work in the past two days on your apps.
+Excellent work in the past two days on your apps 👌.
 
 This is the repo I'd like you to submit a pull request to for me to review your code. 
 
