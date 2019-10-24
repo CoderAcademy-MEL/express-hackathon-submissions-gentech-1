@@ -25,16 +25,16 @@ Router.post('/', express.json(), async (req, res, next) => {
 });
 
 // GET - SHOW ALL TRAINERS
-Router.get('/', async (req, res, next) => {
-  const trainers = await User.find();
-  res.send(trainers);
-});
+// Router.get('/', async (req, res, next) => {
+//   const trainers = await User.find();
+//   res.send(trainers);
+// });
 
 // GET - SHOW ONE TRAINER
-Router.get('/:id', async (req, res, next) => {
-  const { id } = req.params
-  const showTrainer = await Trainer.findById(id).populate('clients');
-  res.send(showTrainer);
-});
+// Router.get('/:id', async (req, res, next) => {
+//   const { id } = req.params
+//   const showTrainer = await Trainer.findById(id).populate('clients');
+//   res.send(showTrainer);
+// });
 
 module.exports = Router;

@@ -4,8 +4,8 @@ const Schema = mongoose.Schema;
 const roleSchema = new Schema({
   privilege: {
     type: String,
-    lowercase: Boolean,
-    required: Boolean
+    lowercase: true,
+    required: true
   }
 });
 
