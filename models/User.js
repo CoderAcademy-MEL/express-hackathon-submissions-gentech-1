@@ -3,43 +3,29 @@ const Schema = mongoose.Schema;
 
 const userSchema = new Schema({
   firstName: {
-    firstName: String,
-    lowercase: true,
-    required: true
+    firstName: String
   },
   lastName: {
-    lastName: String,
-    lowercase: true,
-    required: true
+    lastName: String
   },
   email: {
-    email: String,
-    lowercase: true,
-    required: true,
-    unique: true
+    email: String
   },
   mobile: {
-    mobile: Number,
-    required: false,
-    unique: true
+    mobile: Number
   },
   gender: {
-    gender: String,
-    lowercase: true,
-    required: true
+    gender: String
   },
   dob: {
-    date: String,
-    required: true
+    date: String
   },
   password: {
-    password: String,
-    required: true
+    password: String
   },
   roles: [{
     type: Schema.Types.ObjectId,
-    ref: 'Role',
-    required: true
+    ref: 'Role'
   }]
 });
 

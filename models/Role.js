@@ -3,9 +3,7 @@ const Schema = mongoose.Schema;
 
 const roleSchema = new Schema({
   privilege: {
-    type: String,
-    lowercase: true,
-    required: true
+    type: String
   }
 });
 
